@@ -146,12 +146,97 @@ able to present results within the first day of the customer coming to our shop
 to present it to us. This got us off on the right foot in their eye, and opened
 a channel of communication between me and the company representative - since I
 was actively working with their device and finding out how things worked in
-order to run these tests.
+order to run these tests.\\
+\\
+One of the biggest challenges of this project was constant change of 
+requirements. They appreciated my hard work and my detailed reports, but they
+continually changed priority of what was being tested. For example, our test
+plans seem to always focus on performance and we never covered that with this
+project. We spent the majority of the effort on interoperability - which is
+basically testing compatibility with a very wide range of AP/Router models.\\
+\\
+The most significant example of a requirements change that took place several
+times was with a test where we were suspending the device and attempting to wake
+it up after a certain amount of time had passed. This can be tricky because the
+device isn't doing any communication while in a suspended state. Not only that,
+but the company had developed their own implementation of the wakeup signal.
+The scripts I wrote for this project went into a version-controlled repository,
+and the number of revisions that have been committed is well over 200 now.
+Each time the device was updated, or test expectations changed, communication
+was key in getting future tests to run smoothly. Hundreds of emails were sent,
+there was a lot of interaction via their bug database, and multiple conference
+calls took place. I worked with a fantastic team of engineers that were running
+my scripts and reporting bugs, and many of the issues we ran into were solved
+only because we did it as a team.
+
+\section*{In Conclusion}
+The thing I learned most about during this internship is communication. Within a
+team, or with a supervisor, or with a customer, it is extremely important to
+communicate well. On the team level, it is extremely important that everyone is
+on the same page. We had to work in stride without stepping on each other's
+toes. We used things like collaboration software to stay in sync with technical
+info such as who is running what test, how our equipment is configured, which
+wireless channel we're using, and what tests still need to be done. We help
+each other stay up to date on information about software updates and changes to
+the test methods. Sometimes setting up for a test or running a test doesn't
+quite work, and we help each other fix it.\\
+\\
+Communication with my mentor has been extremely rewarding. When I got here I
+knew nothing about wireless technology or how it is tested. I have learned so
+much from his demonstrations, and he does a great job of illustrating his points
+on the dry erase windows we have in our labs. Once I feel like I've met the
+requirements of a test method, I run it by him again to double check and we talk
+about the results afterward. Many times doing so has allowed us to improve the
+test method so that we can provide even better results.\\
+\\
+When given the chance to talk directly to a customer about the tests or their
+product, I've practiced a very diplomatic reserve. There have been features and
+bugs that have frustrated me greatly and I have to simply observe and report.
+What I really want to do is tell them they're doing it wrong, but that would
+obviously not be constructive.\\
+\\
+Allion's scripts and libraries are written in Python. I had a growing passion
+for working with Python before I started this internship, but I did not have a
+very broad knowledge of the language. Throughout this internship I have been
+constantly learning new ways of implementing tests and writing Python packages.
+Russell, the senior software developer at the shop, has given me some excellent
+instruction. His passive yet encouraging feedback is always helpful. He doesn't
+ever come out and tell me I'm doing something wrong, but he's introduced a lot
+of new concepts to me. Mimicking his style has helped me grow, and I feel
+confident about the deployment and documentation of my work.\\
+\\
+The primary goal I set for myself was to learn about software development on a
+larger scale, and to learn how a software developer interacts with fellow
+developers and customers. The scale of our projects wasn't very large, but I
+have at least worked on some development within a team. The goal that I feel I
+am still pursuing is to do development of a software product for a customer. The
+development I did here was scripts that the engineers and I were running. The
+meta product that was delivered to the customer was a byproduct of those
+scripts. While I appreciate everything I've learned here, the experiences I've
+had, and the people I've gotten to work with, I still feel like there is much
+more for me to learn.\\
+\\
+As mentioned before, there are two main benefits that I think Allion gained
+from my work. The libraries I wrote and automation I developed will help with
+many, many projects down the line. I really hope that when I'm not around the
+code can be maintained without too much trouble. I've attempted to write as much
+documentation as I could to help with that. The other is with the testing we've
+been able to do for these projects. I've shown that I can get things working in
+a pinch and really impress the customer. More importantly, perhaps, is the
+effort I've given to communicating results to the customer. With the project I
+spent the most work on, I really developed a relationship with the company that
+allows good communication between our engineers and theirs. Our contract has
+been extended multiple times, and while that definitely has to do with our
+management's abilities and a lot of really good engineers, I do feel that I
+played a part in that as well. I really began to feel this way when the
+representative from their company specifically requested that I continue to
+work on the project past one of the extension points.
 
 \section*{Buzz Words}
+The following is in addition to terminology associated with Linux and 
+networking.
 \begin{itemize}
 \item DUT - Device Under Test
-\item Hockey Puck - Device Under Test
 \item AP - Access Point
 \item RVR - Rate vs. Range
 \item OTA - Over the Air
